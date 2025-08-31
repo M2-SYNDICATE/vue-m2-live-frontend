@@ -1,0 +1,30 @@
+# Основные настройки API
+port: 7880
+
+keys:
+  devkey: secretsecretsecretsecretsecretsecret
+
+# Адреса для бинда
+bind_addresses:
+  - 127.0.0.1
+
+# 🔐 TLS для основного сервера (HTTPS + WSS)
+# Настройки RTC
+rtc:
+  node_ip: 176.108.245.243
+  port_range_start: 50000
+  port_range_end: 50050
+  use_external_ip: true
+
+# Настройки комнат
+room:
+  empty_timeout: 300
+
+# Настройки TURN/STUN
+turn:
+  enabled: true
+  udp_port: 3478
+  # tls_port: 7443
+  # domain: m2-live.ru
+  # cert_file: /etc/letsencrypt/live/m2-live.ru/fullchain.pem
+  # key_file: /etc/letsencrypt/live/m2-live.ru/privkey.pem
